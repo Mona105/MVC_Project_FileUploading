@@ -1,0 +1,34 @@
+﻿@model MVC_Project.Models.Employee
+@{
+}
+<div class="row">
+    <div class="col-6 offset-3">
+        <form asp-action="Create" asp-controller="Employee" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender"></label>
+                <input asp-for="Gender" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobile"></label>
+                <input asp-for="Mobile" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Please select file</label>
+                <input type="file" class="form-control" name="image"/>
+
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</div>
